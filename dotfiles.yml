@@ -1,0 +1,14 @@
+- name: Set up local workstation
+  hosts: local
+  roles:
+    - role: git
+      tags:
+        - git
+    - role: apt
+      tags:
+        - apt
+    - role: snap
+      tags:
+        - snap
+
+
